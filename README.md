@@ -1,8 +1,9 @@
 # ESP-32-S3-devkitc-BadUSB
+
 A proof-of-concept BadUSB project using the ESP32-S3 DevKitC. Demonstrates HID (Human Interface Device) emulation, keystroke injection, and custom payload deployment for security research, red teaming, and penetration testing.
 This project provides a web-based control panel for the ESP32-S3 BadUSB.  
 It allows uploading, editing, and executing BadUSB scripts directly from a browser over WiFi.
----
+
 Board: ESP32-S3 DevKitC-1 (N16R8)
 SD Card Interface: SPI
 
