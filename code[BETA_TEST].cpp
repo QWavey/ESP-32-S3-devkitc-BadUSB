@@ -20,8 +20,8 @@
 #define RESET_BUTTON_PIN 0
 
 // Default WiFi AP configuration
-String ap_ssid = "ESP32-BadUSB";
-String ap_password = "badusb123";
+String ap_ssid = "EspGuard";
+String ap_password = "987654321";
 
 // Web server
 WebServer server(80);
