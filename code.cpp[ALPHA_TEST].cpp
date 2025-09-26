@@ -15,8 +15,8 @@
 #define SD_SCK_PIN 12
 
 // WiFi AP configuration
-const char* ap_ssid = "ESP32-BadUSB";
-const char* ap_password = "badusb123";
+const char* ap_ssid = "EspGuard";
+const char* ap_password = "987654321";
 
 // Web server
 WebServer server(80);
