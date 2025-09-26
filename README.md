@@ -26,7 +26,7 @@ It allows uploading, editing, and executing BadUSB scripts directly from a brows
 | 8  | Rower Payloads (multiple scripts)| ❌ |
 | 9  | Boolean Variables                | ❌ |
 | 10 | Repeat / Replay Commands         | ❌ |
-| 11 | LED Control                      | ❌ |
+| 11 | LED Control                      | ⏳ |
 | 12 | Raw Keycodes                     | ✅ |
 
 ---
