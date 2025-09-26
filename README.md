@@ -19,7 +19,7 @@ SD Card Interface: SPI
 ---
 ✅ Working as expected
 
-⏳ Not working as expected
+⏳ Not working as expected / Particially Working
 
 ⏳ Broken, needs fixing
 
@@ -33,7 +33,7 @@ SD Card Interface: SPI
 | 2  | Strings & Variables              | ✅ (basic only, without math concat) |
 | 3  | Math Operations                  | ❌ |
 | 4  | Function Variables               | ⏳ |
-| 5  | WiFi Detection                   | ⏳ |
+| 5  | WiFi Detection                   | ✅ |
 | 6  | Blocks                           | ❌ |
 | 7  | Hold Keys                        | ❌ |
 | 8  | Rower Payloads (multiple scripts)| ❌ |
