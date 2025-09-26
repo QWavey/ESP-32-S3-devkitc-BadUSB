@@ -2,10 +2,11 @@
 
 # EspGuard
 
+---
 A proof-of-concept BadUSB project using the ESP32-S3 DevKitC. Demonstrates HID (Human Interface Device) emulation, keystroke injection, and custom payload deployment for security research, red teaming, and penetration testing.
 This project provides a web-based control panel for the ESP32-S3 BadUSB.  
 It allows uploading, editing, and executing BadUSB scripts directly from a browser over WiFi.
----
+
 # ⚠️ ATTENTION ⚠️:
 This repository does not include or redistribute Hak5’s DuckyScript language files or any other copyrighted Hak5 content.
 
