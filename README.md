@@ -4,6 +4,13 @@ This project provides a web-based control panel for the ESP32-S3 BadUSB.
 It allows uploading, editing, and executing BadUSB scripts directly from a browser over WiFi.
 
 ---
+✅ Working as expected
+
+⏳ Not working as expected
+
+⏳ Broken, needs fixing
+
+❌ Removed / Not implemented
 
 ## 📌 Current Status (Roadmap)
 
@@ -11,9 +18,9 @@ It allows uploading, editing, and executing BadUSB scripts directly from a brows
 |----|----------------------------------|--------|
 | 1  | Basic Key Combinations           | ✅ |
 | 2  | Strings & Variables              | ✅ (basic only, without math concat) |
-| 3  | Math Operations                  | ❌ (removed / not implemented) |
-| 4  | Function Variables               | ⏳ (broken, needs fixing) |
-| 5  | WiFi Detection                   | ⏳ (not working as expected) |
+| 3  | Math Operations                  | ❌ |
+| 4  | Function Variables               | ⏳ |
+| 5  | WiFi Detection                   | ⏳ |
 | 6  | Blocks                           | ❌ |
 | 7  | Hold Keys                        | ❌ |
 | 8  | Rower Payloads (multiple scripts)| ❌ |
