@@ -16,6 +16,7 @@ SD Card Interface: SPI
 |      `MOSI` | `GPIO11`               |
 |      `MISO` | `GPIO13`               |
 
+---
 ✅ Working as expected
 
 ⏳ Not working as expected
