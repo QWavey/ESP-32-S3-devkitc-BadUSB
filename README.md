@@ -8,11 +8,17 @@ Board: ESP32-S3 DevKitC-1 (N16R8)
 SD Card Interface: SPI
 
 SD Card Pin	ESP32-S3 DevKitC-1 Pin
+
 3V3	3V3
+
 GND	GND
+
 CS (SS)	GPIO10
+
 MOSI	GPIO11
+
 MISO	GPIO13
+
 CLK (SCK)	GPIO12
 ---
 ✅ Working as expected
