@@ -7,7 +7,7 @@ It allows uploading, editing, and executing BadUSB scripts directly from a brows
 Board: ESP32-S3 DevKitC-1 (N16R8)
 SD Card Interface: SPI
 
-SD Card Pin	ESP32-S3 DevKitC-1 Pin
+# SD Card Pin	ESP32-S3 DevKitC-1 Pin
 
 3V3	3V3
 
