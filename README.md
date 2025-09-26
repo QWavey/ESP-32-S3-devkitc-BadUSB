@@ -10,7 +10,7 @@ It allows uploading, editing, and executing BadUSB scripts directly from a brows
 # ⚠️ ATTENTION ⚠️:
 This repository does not include or redistribute Hak5’s DuckyScript language files or any other copyrighted Hak5 content.
 
-The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. For those who wish to use the official language files, please visit the official Hak5 repository: Hak5 DuckyScript Languages
+The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. For those who wish to use the official language files, please visit the official Hak5 repository: [Hak5 DuckyScript Languages](https://github.com/hak5/usbrubberducky-payloads/tree/master/languages)
 
 This project is intended solely for educational purposes, experimentation, and authorized security testing where permitted by local laws. It is not affiliated with, endorsed by, or sponsored by Hak5 LLC. Users are responsible for ensuring that their use of this project and any related tools complies with all applicable local, national, and international laws.
 
