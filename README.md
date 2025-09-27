@@ -70,6 +70,14 @@ SD Card Interface: SPI
 
 ---
 
+
+## File Structure:
+`/languages` (inside of sd card, containing all Language files, You need to find the Language files yourself. Putting them here in the repository would get me into legal trouble.)
+  en.json 
+  de.json
+  .....
+`config.json` (Will be created automatically)
+
 ## 🗂️ Planned File Structure
 
 - `index.html` → main frontend (UI for writing & executing scripts)
@@ -79,6 +87,7 @@ SD Card Interface: SPI
 - Folder for payloads `/payloads`
 - Folder for Fonts `/fonts`
 - Folder for custom Designs / Items such as CSS, JS, HTML. `/items`
+- `/languages` (inside of sd card, containing all files)
 
 ---
 
