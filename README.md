@@ -99,8 +99,8 @@ If you want to help me, contact me on Discord and send me your code suggestions:
 1. Split `index.html` and `syntaxes.json` for cleaner design
 2. Define full JSON schema for supported commands
 3. Add status indicators in UI for working / not working features
-4. Gradually implement missing features (#3, #4, #5, #6, #7, #8, #9, #10, #11)
-
+4. Gradually implement missing features 
+5. Adding Customisation and Designing
 ---
 
 ## ✅ Usage
