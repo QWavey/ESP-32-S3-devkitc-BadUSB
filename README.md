@@ -101,7 +101,7 @@ If you want to help me, contact me on Discord and send me your code suggestions:
 
 - Function-style variables
 - Cleaning up script parser for unsupported commands
-
+- Wiki. To see the incomplete structure, go to : [Wiki](https://github.com/XQuantumWaveX/ESP-32-S3-devkitc-BadUSB/wiki)
 ---
 
 ## ⌛ Next Steps
