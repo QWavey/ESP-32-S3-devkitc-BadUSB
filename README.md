@@ -69,6 +69,9 @@ SD Card Interface: SPI
 - `syntaxes.json` → list of all available commands (`STRING`, `DELAY`, `REPEAT`, etc.) with description + examples
 - `main.cpp` (firmware) → ESP32 BadUSB logic
 - `README.md` → project documentation (this file)
+- Folder for payloads `/payloads`
+- Folder for Fonts `/fonts`
+- Folder for custom Designs / Items such as CSS, JS, HTML. `/items`
 
 ---
 
