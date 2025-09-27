@@ -59,7 +59,7 @@ SD Card Interface: SPI
 | 11 | LED Control                      | ⏳ |
 | 12 | Raw Keycodes                     | ✅ |
 | 13 | Syntax Error Highlight in Editor | ❌ |
-| 14 | Fonts                            | ❌ |
+| 14 | Custom Fonts in the WebGUI saved on sd card| ❌ |
 | 15 | Customisation in the WebGUI      | ❌ |
 ---
 
