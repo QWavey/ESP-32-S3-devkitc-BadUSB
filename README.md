@@ -58,7 +58,7 @@ SD Card Interface: SPI
 | 10 | Repeat / Replay Commands         | ❌ |
 | 11 | LED Control                      | ⏳ |
 | 12 | Raw Keycodes                     | ✅ |
-
+| 13 | Syntax Error Highlight in Editor | ❌ |
 ---
 
 ## 🗂️ Planned File Structure
