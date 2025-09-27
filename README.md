@@ -76,6 +76,7 @@ SD Card Interface: SPI
   en.json 
   de.json
   .....
+  
 `config.json` (Will be created automatically)
 
 ## 🗂️ Planned File Structure
