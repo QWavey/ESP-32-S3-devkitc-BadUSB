@@ -59,6 +59,8 @@ SD Card Interface: SPI
 | 11 | LED Control                      | ⏳ |
 | 12 | Raw Keycodes                     | ✅ |
 | 13 | Syntax Error Highlight in Editor | ❌ |
+| 14 | Fonts                            | ❌ |
+| 15 | Customisation in the WebGUI      | ❌ |
 ---
 
 ## 🗂️ Planned File Structure
