@@ -83,7 +83,6 @@ SD Card Interface: SPI
 
 ## ⏳ Work in Progress
 
-- Fixing WiFi conditional execution (`IF_PRESENT`, `IF_NOTPRESENT`)
 - Function-style variables
 - Cleaning up script parser for unsupported commands
 
