@@ -47,7 +47,7 @@ SD Card Interface: SPI
 | #  | Feature / Example                | Status |
 |----|----------------------------------|--------|
 | 1  | Basic Key Combinations           | ✅ |
-| 2  | Strings & Variables              | ✅ (basic only, without math concat) |
+| 2  | Strings & Variables              | ✅ |
 | 3  | Math Operations                  | ❌ |
 | 4  | Function Variables               | ⏳ |
 | 5  | WiFi Detection                   | ✅ |
