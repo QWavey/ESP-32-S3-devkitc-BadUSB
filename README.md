@@ -109,3 +109,4 @@ SD Card Interface: SPI
 
 This project is for **educational and testing purposes only**.  
 Do not use it for malicious activities.
+I am not responsible for any misuse.
