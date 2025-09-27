@@ -72,6 +72,12 @@ SD Card Interface: SPI
 
 ---
 
+
+## HELPING ME:
+
+If you want to help me, contact me on Discord and send me your code suggestions: sniper74
+
+
 ## 🔧 Features Implemented
 
 - Basic key press & combinations (Win+R, Alt+Tab, etc.)
