@@ -54,21 +54,20 @@ SD Card Interface: SPI
 | -- | -------------------------------------------------------------------------------- | ------ |
 | 1  | Basic Key Combinations                                                           | ✅      |
 | 2  | Strings & Variables                                                              | ✅      |
-| 5  | WiFi Detection                                                                   | ✅      |
-| 11 | LED Control                                                                      | ✅      |
-| 12 | Raw Keycodes                                                                     | ✅      |
-| 16 | SD Card Detection with Status Light (error when removed, approval when inserted) | ✅      |
-| 4  | Function Variables                                                               | ⏳      |
-| 10 | Repeat / Replay Commands                                                         | ⏳      |
-| 14 | Custom Fonts in the WebGUI (stored on SD card)                                   | ⏳      |
-| 3  | Math Operations                                                                  | ❌      |
-| 6  | Blocks                                                                           | ❌      |
-| 7  | Hold Keys                                                                        | ❌      |
-| 8  | Rower Payloads (multiple scripts)                                                | ❌      |
-| 9  | Boolean Variables                                                                | ❌      |
-| 13 | Syntax Error Highlight in Editor                                                 | ❌      |
-| 15 | Customisation in the WebGUI                                                      | ❌      |
-|
+| 3  | WiFi Detection                                                                   | ✅      |
+| 4  | LED Control                                                                      | ✅      |
+| 5  | Raw Keycodes                                                                     | ✅      |
+| 6  | SD Card Detection with Status Light (error when removed, approval when inserted) | ✅      |
+| 7  | Function Variables                                                               | ⏳      |
+| 8  | Repeat / Replay Commands                                                         | ⏳      |
+| 9  | Custom Fonts in the WebGUI (stored on SD card)                                   | ⏳      |
+| 10 | Math Operations                                                                  | ❌      |
+| 11 | Blocks                                                                           | ❌      |
+| 12 | Hold Keys                                                                        | ❌      |
+| 13 | Rower Payloads (multiple scripts)                                                | ❌      |
+| 14 | Boolean Variables                                                                | ❌      |
+| 15 | Syntax Error Highlight in Editor                                                 | ❌      |
+| 16 | Customisation in the WebGUI                                                      | ❌      |
 
 ---
 
