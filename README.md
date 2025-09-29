@@ -19,7 +19,7 @@ It allows uploading, editing, and executing BadUSB scripts directly from a brows
 # ⚠️ ATTENTION ⚠️:
 This repository does not include or redistribute Hak5’s DuckyScript language files or any other copyrighted Hak5 content.
 
-The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. For those who wish to use the official language files, please visit the official Hak5 repository: [Hak5 DuckyScript Languages](https://github.com/hak5/usbrubberducky-payloads/tree/master/languages)
+The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. For those who wish to use the official language files, please visit the official Hak5 repository: [Hak5 DuckyScript Languages](https://github.com/hak5/usbrubberducky-payloads/tree/master/languages) . You ned to put the languages folder inside of the SD card.
 
 IF THE URL IS DOWN, GO TO: [Waybackmachine](http://web.archive.org/web/20250000000000*/https://github.com/hak5/usbrubberducky-payloads/tree/master/languages)
 
