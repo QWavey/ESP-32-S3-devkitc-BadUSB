@@ -89,6 +89,7 @@ SD Card Interface: SPI
 - Folder for Fonts `/fonts`
 - Folder for custom Designs / Items such as CSS, JS, HTML. `/items`
 - `/languages` (inside of sd card, containing all files)
+- `config.json` (inside of the Root of the SD card. Main config for WiFi hosting, password etc  etc....)
 
 ---
 
