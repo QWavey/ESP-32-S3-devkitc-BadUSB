@@ -50,23 +50,25 @@ SD Card Interface: SPI
 ❌ Removed / Not implemented
 
 ## 📌 Current Status (Roadmap)
-| #  | Feature / Example                           | Status |
-| -- | ------------------------------------------- | ------ |
-| 1  | Basic Key Combinations                      | ✅      |
-| 2  | Strings & Variables                         | ✅      |
-| 5  | WiFi Detection                              | ✅      |
-| 12 | Raw Keycodes                                | ✅      |
-| 4  | Function Variables                          | ⏳      |
-| 11 | LED Control                                 | ⏳      |
-| 3  | Math Operations                             | ❌      |
-| 6  | Blocks                                      | ❌      |
-| 7  | Hold Keys                                   | ❌      |
-| 8  | Rower Payloads (multiple scripts)           | ❌      |
-| 9  | Boolean Variables                           | ❌      |
-| 10 | Repeat / Replay Commands                    | ❌      |
-| 13 | Syntax Error Highlight in Editor            | ❌      |
-| 14 | Custom Fonts in the WebGUI saved on sd card | ❌      |
-| 15 | Customisation in the WebGUI                 | ❌      |
+| #  | Feature / Example                                                                | Status |
+| -- | -------------------------------------------------------------------------------- | ------ |
+| 1  | Basic Key Combinations                                                           | ✅      |
+| 2  | Strings & Variables                                                              | ✅      |
+| 5  | WiFi Detection                                                                   | ✅      |
+| 11 | LED Control                                                                      | ✅      |
+| 12 | Raw Keycodes                                                                     | ✅      |
+| 16 | SD Card Detection with Status Light (error when removed, approval when inserted) | ✅      |
+| 4  | Function Variables                                                               | ⏳      |
+| 10 | Repeat / Replay Commands                                                         | ⏳      |
+| 14 | Custom Fonts in the WebGUI (stored on SD card)                                   | ⏳      |
+| 3  | Math Operations                                                                  | ❌      |
+| 6  | Blocks                                                                           | ❌      |
+| 7  | Hold Keys                                                                        | ❌      |
+| 8  | Rower Payloads (multiple scripts)                                                | ❌      |
+| 9  | Boolean Variables                                                                | ❌      |
+| 13 | Syntax Error Highlight in Editor                                                 | ❌      |
+| 15 | Customisation in the WebGUI                                                      | ❌      |
+|
 
 ---
 
