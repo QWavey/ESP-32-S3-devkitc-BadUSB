@@ -43,11 +43,9 @@ SD Card Interface: SPI
 ---
 ✅ Working as expected
 
-⏳ Not working as expected / Particially Working
+⏳ Planned
 
-⏳ Broken, needs fixing
-
-❌ Removed / Not implemented
+❌ Not implemented yet
 
 ## 📌 Current Status (Roadmap)
 | #  | Feature / Example                                                                | Status |
