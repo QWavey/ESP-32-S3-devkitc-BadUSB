@@ -72,6 +72,8 @@ SD Card Interface: SPI
 | 18 | Exposing the SD card like an USB stick on the Target device with SHOW_SD and HIDE_SD                                                      | ❌      |
 | 19 | OS Detection                                                      | ❌      |
 | 20 | Keylog Addon                                                      | ❌      |
+| 21 | Connecting to WiFi                                                  | ❌      |
+| 22 | Using the connected WiFi to perform web actions                                                 | ❌      |
 ---
 
 
@@ -92,7 +94,7 @@ SD Card Interface: SPI
 - Folder for custom Designs / Items such as CSS, JS, HTML. `/items`
 - `/languages` (inside of sd card, containing all files)
 - `config.json` (inside of the Root of the SD card. Main config for WiFi hosting, password etc  etc....)
-
+- `/uploads` For saving uploaded files
 ---
 
 
