@@ -69,11 +69,12 @@ SD Card Interface: SPI
 | 15 | Boolean Variables<br>(store true or false)                 | ❌     |
 | 16 | Syntax Error Highlight<br>(show errors in editor)          | ❌     |
 | 17 | Customisation WebGUI<br>(adjust GUI settings)              | ❌     |
-| 18 | Expose SD Card<br>(show/hide SD card access)               | ❌     |
+| 18 | Expose SD Card over USB<br>(show/hide SD card access)               | ❌     |
 | 19 | OS Detection<br>(detect target operating system)           | ❌     |
 | 20 | Keylog Addon<br>(record keystrokes)                        | ❌     |
 | 21 | Connecting to WiFi<br>(establish wireless connection)      | ❌     |
 | 22 | Web Actions<br>(perform tasks using WiFi)                  | ❌     |
+| 23 | Pasting/Cutting/Copying files from the SD card to the PC.                   | ❌     |
 ---
 
 
