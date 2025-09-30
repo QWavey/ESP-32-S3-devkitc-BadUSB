@@ -50,31 +50,30 @@ SD Card Interface: SPI
 ❌ Not implemented yet, but planned
 
 ## 📌 Current Status (Roadmap)
-| #  | Feature / Example                                                                    | Status |
-| -- | ------------------------------------------------------------------------------------ | ------ |
-| 1  | Basic Key Combinations                                                               | ✅      |
-| 2  | Strings & Variables                                                                  | ✅      |
-| 3  | WiFi Detection                                                                       | ✅      |
-| 4  | LED Control                                                                          | ✅      |
-| 5  | Raw Keycodes                                                                         | ✅      |
-| 6  | SD Card Detection with Status Light (error when removed, approval when inserted)     | ✅      |
-| 17 | Uploading files other than .txt to the SD card                                       | ✅      |
-| 7  | Function Variables                                                                   | ⏳      |
-| 8  | Repeat / Replay Commands                                                             | ⏳      |
-| 9  | Custom Fonts in the WebGUI (stored on SD card)                                       | ⏳      |
-| 10 | Math Operations                                                                      | ❌      |
-| 11 | Blocks                                                                               | ❌      |
-| 12 | Hold Keys                                                                            | ❌      |
-| 14 | Boolean Variables                                                                    | ❌      |
-| 13 | Rower Payloads (multiple scripts)                                                    | ❌      |
-| 15 | Syntax Error Highlight in Editor                                                     | ❌      |
-| 16 | Customisation in the WebGUI                                                          | ❌      |
-| 18 | Exposing the SD card like an USB stick on the Target device with SHOW_SD and HIDE_SD | ❌      |
-| 19 | OS Detection                                                                         | ❌      |
-| 20 | Keylog Addon                                                                         | ❌      |
-| 21 | Connecting to WiFi                                                                   | ❌      |
-| 22 | Using the connected WiFi to perform web actions                                      | ❌      |
-
+| #  | Feature / Example                                                                                  | Status |
+| -- | -------------------------------------------------------------------------------------------------- | ------ |
+| 1  | Basic Key Combinations        (ability to send simple or combined key presses repeatedly)          | ✅      |
+| 2  | Strings & Variables           (ability to store and manipulate text or numeric values dynamically) | ✅      |
+| 3  | WiFi Detection                (ability to detect available WiFi networks automatically)            | ✅      |
+| 4  | LED Control                   (ability to control LED lights for status or visual feedback)        | ✅      |
+| 5  | Raw Keycodes                  (ability to send low-level keycodes for precise control)             | ✅      |
+| 6  | SD Card Detection             (ability to detect SD card insertion or removal events)              | ✅      |
+| 17 | File Upload to SD             (ability to upload files beyond .txt format to SD card storage)      | ✅      |
+| 7  | Function Variables            (ability to define and use functions with variables inside scripts)  | ⏳      |
+| 8  | Repeat / Replay Commands      (ability to repeat or replay previous commands automatically)        | ⏳      |
+| 9  | Custom Fonts WebGUI           (ability to use custom fonts stored on SD card in the web interface) | ⏳      |
+| 10 | Math Operations               (ability to perform arithmetic calculations within scripts)          | ❌      |
+| 11 | Blocks                        (ability to use visual code blocks to create scripts easily)         | ❌      |
+| 12 | Hold Keys                     (ability to hold keys across time intervals or payload changes)      | ❌      |
+| 14 | Boolean Variables             (ability to define and use true/false variables in scripts)          | ❌      |
+| 13 | Rower Payloads                (ability to run multiple scripts or payloads sequentially)           | ❌      |
+| 15 | Syntax Error Highlight        (ability to highlight syntax errors in the code editor)              | ❌      |
+| 16 | WebGUI Customisation          (ability to change appearance and options in the web interface)      | ❌      |
+| 18 | SD as USB                     (ability to expose SD card like a USB drive on target device)        | ❌      |
+| 19 | OS Detection                  (ability to detect the operating system of the target device)        | ❌      |
+| 20 | Keylog Addon                  (ability to log keystrokes on the target device for analysis)        | ❌      |
+| 21 | WiFi Connection               (ability to connect the device to WiFi networks automatically)       | ❌      |
+| 22 | Web Actions                   (ability to perform internet actions using the connected WiFi)       | ❌      |
 ---
 
 
