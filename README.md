@@ -47,7 +47,7 @@ SD Card Interface: SPI
 
 ⏳ Planned
 
-❌ Not implemented yet
+❌ Not implemented yet, but planned
 
 ## 📌 Current Status (Roadmap)
 | #  | Feature / Example                                                                | Status |
@@ -68,8 +68,10 @@ SD Card Interface: SPI
 | 14 | Boolean Variables                                                                | ❌      |
 | 15 | Syntax Error Highlight in Editor                                                 | ❌      |
 | 16 | Customisation in the WebGUI                                                      | ❌      |
-| 17 | Uploading files other then .txt to the SD card                                                      | ❌      |
+| 17 | Uploading files other then .txt to the SD card                                                      | ✅      |
 | 18 | Exposing the SD card like an USB stick on the Target device with SHOW_SD and HIDE_SD                                                      | ❌      |
+| 19 | OS Detection                                                      | ❌      |
+| 20 | Keylog Addon                                                      | ❌      |
 ---
 
 
