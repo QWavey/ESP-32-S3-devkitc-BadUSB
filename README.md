@@ -50,30 +50,31 @@ SD Card Interface: SPI
 ❌ Not implemented yet, but planned
 
 ## 📌 Current Status (Roadmap)
-| #  | Feature / Example                                                                | Status |
-| -- | -------------------------------------------------------------------------------- | ------ |
-| 1  | Basic Key Combinations                                                           | ✅      |
-| 2  | Strings & Variables                                                              | ✅      |
-| 3  | WiFi Detection                                                                   | ✅      |
-| 4  | LED Control                                                                      | ✅      |
-| 5  | Raw Keycodes                                                                     | ✅      |
-| 6  | SD Card Detection with Status Light (error when removed, approval when inserted) | ✅      |
-| 7  | Function Variables                                                               | ⏳      |
-| 8  | Repeat / Replay Commands                                                         | ⏳      |
-| 9  | Custom Fonts in the WebGUI (stored on SD card)                                   | ⏳      |
-| 10 | Math Operations                                                                  | ❌      |
-| 11 | Blocks                                                                           | ❌      |
-| 12 | Hold Keys                                                                        | ❌      |
-| 13 | Rower Payloads (multiple scripts)                                                | ❌      |
-| 14 | Boolean Variables                                                                | ❌      |
-| 15 | Syntax Error Highlight in Editor                                                 | ❌      |
-| 16 | Customisation in the WebGUI                                                      | ❌      |
-| 17 | Uploading files other then .txt to the SD card                                                      | ✅      |
-| 18 | Exposing the SD card like an USB stick on the Target device with SHOW_SD and HIDE_SD                                                      | ❌      |
-| 19 | OS Detection                                                      | ❌      |
-| 20 | Keylog Addon                                                      | ❌      |
-| 21 | Connecting to WiFi                                                  | ❌      |
-| 22 | Using the connected WiFi to perform web actions                                                 | ❌      |
+| #  | Feature / Example                                                                    | Status |
+| -- | ------------------------------------------------------------------------------------ | ------ |
+| 1  | Basic Key Combinations                                                               | ✅      |
+| 2  | Strings & Variables                                                                  | ✅      |
+| 3  | WiFi Detection                                                                       | ✅      |
+| 4  | LED Control                                                                          | ✅      |
+| 5  | Raw Keycodes                                                                         | ✅      |
+| 6  | SD Card Detection with Status Light (error when removed, approval when inserted)     | ✅      |
+| 17 | Uploading files other than .txt to the SD card                                       | ✅      |
+| 7  | Function Variables                                                                   | ⏳      |
+| 8  | Repeat / Replay Commands                                                             | ⏳      |
+| 9  | Custom Fonts in the WebGUI (stored on SD card)                                       | ⏳      |
+| 10 | Math Operations                                                                      | ❌      |
+| 11 | Blocks                                                                               | ❌      |
+| 12 | Hold Keys                                                                            | ❌      |
+| 14 | Boolean Variables                                                                    | ❌      |
+| 13 | Rower Payloads (multiple scripts)                                                    | ❌      |
+| 15 | Syntax Error Highlight in Editor                                                     | ❌      |
+| 16 | Customisation in the WebGUI                                                          | ❌      |
+| 18 | Exposing the SD card like an USB stick on the Target device with SHOW_SD and HIDE_SD | ❌      |
+| 19 | OS Detection                                                                         | ❌      |
+| 20 | Keylog Addon                                                                         | ❌      |
+| 21 | Connecting to WiFi                                                                   | ❌      |
+| 22 | Using the connected WiFi to perform web actions                                      | ❌      |
+
 ---
 
 
