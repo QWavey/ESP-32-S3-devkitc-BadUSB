@@ -75,6 +75,7 @@ SD Card Interface: SPI
 | 21 | Connecting to WiFi<br>(establish wireless connection)      | ❌     |
 | 22 | Web Actions<br>(perform tasks using WiFi)                  | ❌     |
 | 23 | Pasting/Cutting/Copying files from the SD card to the PC.                   | ❌     |
+| 24 | Disabling USB Function on boot and only draw power               | ❌     |
 ---
 
 
