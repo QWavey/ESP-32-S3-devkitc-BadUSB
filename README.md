@@ -50,30 +50,30 @@ SD Card Interface: SPI
 ❌ Not implemented yet, but planned
 
 ## 📌 Current Status (Roadmap)
-| #  | Feature / Example                                           | Status |
-| -- | ----------------------------------------------------------- | ------ |
-| 1  | Basic Key Combinations (press multiple keys simultaneously) | ✅      |
-| 2  | Strings & Variables (store and manipulate text)             | ✅      |
-| 3  | WiFi Detection (detect available wireless networks)         | ✅      |
-| 4  | LED Control (turn LEDs on/off)                              | ✅      |
-| 5  | Raw Keycodes (send specific key signals)                    | ✅      |
-| 6  | SD Card Detection (detect SD card status)                   | ✅      |
-| 17 | Uploading files (add non-text files)                        | ✅      |
-| 7  | Function Variables (store values for functions)             | ⏳      |
-| 8  | Repeat / Replay Commands (repeat key sequences)             | ⏳      |
-| 9  | Custom Fonts WebGUI (use fonts from SD)                     | ⏳      |
-| 10 | Math Operations (perform calculations)                      | ❌      |
-| 11 | Blocks (visual programming blocks)                          | ❌      |
-| 12 | Hold Keys (hold keys across time intervals)                 | ❌      |
-| 14 | Boolean Variables (store true or false)                     | ❌      |
-| 13 | Rower Payloads (run multiple scripts sequentially)          | ❌      |
-| 15 | Syntax Error Highlight (show errors in editor)              | ❌      |
-| 16 | Customisation WebGUI (adjust GUI settings)                  | ❌      |
-| 18 | Expose SD Card (show/hide SD card access)                   | ❌      |
-| 19 | OS Detection (detect target operating system)               | ❌      |
-| 20 | Keylog Addon (record keystrokes)                            | ❌      |
-| 21 | Connecting to WiFi (establish wireless connection)          | ❌      |
-| 22 | Web Actions (perform tasks using WiFi)                      | ❌      |
+| #  | Feature / Example                                          | Status |
+|----|------------------------------------------------------------|--------|
+| 1  | Basic Key Combinations<br>(press multiple keys simultaneously) | ✅     |
+| 2  | Strings & Variables<br>(store and manipulate text)         | ✅     |
+| 3  | WiFi Detection<br>(detect available wireless networks)     | ✅     |
+| 4  | LED Control<br>(turn LEDs on/off)                           | ✅     |
+| 5  | Raw Keycodes<br>(send specific key signals)                | ✅     |
+| 6  | SD Card Detection<br>(detect SD card status)               | ✅     |
+| 7  | Uploading files<br>(add non-text files)                    | ✅     |
+| 8  | Function Variables<br>(store values for functions)         | ⏳     |
+| 9  | Repeat / Replay Commands<br>(repeat key sequences)         | ⏳     |
+| 10 | Custom Fonts WebGUI<br>(use fonts from SD)                 | ⏳     |
+| 11 | Math Operations<br>(perform calculations)                  | ❌     |
+| 12 | Blocks<br>(visual programming blocks)                      | ❌     |
+| 13 | Hold Keys<br>(hold keys across time intervals)             | ❌     |
+| 14 | Rower Payloads<br>(run multiple scripts sequentially)      | ❌     |
+| 15 | Boolean Variables<br>(store true or false)                 | ❌     |
+| 16 | Syntax Error Highlight<br>(show errors in editor)          | ❌     |
+| 17 | Customisation WebGUI<br>(adjust GUI settings)              | ❌     |
+| 18 | Expose SD Card<br>(show/hide SD card access)               | ❌     |
+| 19 | OS Detection<br>(detect target operating system)           | ❌     |
+| 20 | Keylog Addon<br>(record keystrokes)                        | ❌     |
+| 21 | Connecting to WiFi<br>(establish wireless connection)      | ❌     |
+| 22 | Web Actions<br>(perform tasks using WiFi)                  | ❌     |
 ---
 
 
