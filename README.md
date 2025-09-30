@@ -50,33 +50,34 @@ SD Card Interface: SPI
 ❌ Not implemented yet, but planned
 
 ## 📌 Current Status (Roadmap)
-| #  | Feature / Example                                          | Status |
-|----|------------------------------------------------------------|--------|
-| 1  | Basic Key Combinations<br>(press multiple keys simultaneously) | ✅     |
-| 2  | Strings & Variables<br>(store and manipulate text)         | ✅     |
-| 3  | WiFi Detection<br>(detect available wireless networks and run commands based of "is the wifi there or not")     | ✅     |
-| 4  | LED Control<br>(turn LEDs on/off)                           | ✅     |
-| 5  | Raw Keycodes<br>(send specific key signals)                | ✅     |
-| 6  | SD Card Detection<br>(detect SD card status)               | ✅     |
-| 7  | Uploading files<br>(add non-text files)                    | ✅     |
-| 8  | Function Variables<br>(store values for functions)         | ⏳     |
-| 9  | Repeat / Replay Commands<br>(repeat key sequences)         | ⏳     |
-| 10 | Custom Fonts WebGUI<br>(use fonts from SD)                 | ⏳     |
-| 11 | Math Operations<br>(perform calculations)                  | ❌     |
-| 12 | Blocks<br>(visual programming blocks)                      | ❌     |
-| 13 | Hold Keys<br>(hold keys across time intervals)             | ❌     |
-| 14 | Rower Payloads<br>(run multiple scripts sequentially)      | ❌     |
-| 15 | Boolean Variables<br>(store true or false)                 | ❌     |
-| 16 | Syntax Error Highlight<br>(show errors in editor)          | ❌     |
-| 17 | Customisation WebGUI<br>(adjust GUI settings)              | ❌     |
-| 18 | Expose SD Card over USB<br>(show/hide SD card access)               | ❌     |
-| 19 | OS Detection<br>(detect target operating system)           | ❌     |
-| 20 | Keylog Addon<br>(record keystrokes)                        | ❌     |
-| 21 | Connecting to WiFi<br>(establish wireless connection)      | ❌     |
-| 22 | Web Actions<br>(perform tasks using WiFi)                  | ❌     |
-| 23 | Pasting/Cutting/Copying files from the SD card to the PC.                   | ❌     |
-| 24 | Disabling USB Function on boot and only draw power               | ❌     |
-| 25 | Mouse functionality             | ❌     |
+| #  | Feature / Example                                                                                           | Status |
+| -- | ----------------------------------------------------------------------------------------------------------- | ------ |
+| 1  | Basic Key Combinations<br>(press multiple keys simultaneously)                                              | ✅      |
+| 2  | Strings & Variables<br>(store and manipulate text)                                                          | ✅      |
+| 3  | WiFi Detection<br>(detect available wireless networks and run commands based of "is the wifi there or not") | ✅      |
+| 4  | LED Control<br>(turn LEDs on/off)                                                                           | ✅      |
+| 5  | Raw Keycodes<br>(send specific key signals)                                                                 | ✅      |
+| 6  | SD Card Detection<br>(detect SD card status)                                                                | ✅      |
+| 7  | Uploading files<br>(add non-text files)                                                                     | ✅      |
+| 19 | OS Detection<br>(detect target operating system)                                                            | ✅      |
+| 8  | Function Variables<br>(store values for functions)                                                          | ⏳      |
+| 9  | Repeat / Replay Commands<br>(repeat key sequences)                                                          | ⏳      |
+| 10 | Custom Fonts WebGUI<br>(use fonts from SD)                                                                  | ⏳      |
+| 11 | Math Operations<br>(perform calculations)                                                                   | ❌      |
+| 12 | Blocks<br>(visual programming blocks)                                                                       | ❌      |
+| 13 | Hold Keys<br>(hold keys across time intervals)                                                              | ❌      |
+| 14 | Rower Payloads<br>(run multiple scripts sequentially)                                                       | ❌      |
+| 15 | Boolean Variables<br>(store true or false)                                                                  | ❌      |
+| 16 | Syntax Error Highlight<br>(show errors in editor)                                                           | ❌      |
+| 17 | Customisation WebGUI<br>(adjust GUI settings)                                                               | ❌      |
+| 18 | Expose SD Card over USB<br>(show/hide SD card access)                                                       | ❌      |
+| 20 | Keylog Addon<br>(record keystrokes)                                                                         | ❌      |
+| 21 | Connecting to WiFi<br>(establish wireless connection)                                                       | ❌      |
+| 22 | Web Actions<br>(perform tasks using WiFi)                                                                   | ❌      |
+| 23 | Pasting/Cutting/Copying files from the SD card to the PC.                                                   | ❌      |
+| 24 | Disabling USB Function on boot and only draw power                                                          | ❌      |
+| 25 | Mouse functionality                                                                                         | ❌      |
+
 ---
 
 
