@@ -54,7 +54,7 @@ SD Card Interface: SPI
 |----|------------------------------------------------------------|--------|
 | 1  | Basic Key Combinations<br>(press multiple keys simultaneously) | ✅     |
 | 2  | Strings & Variables<br>(store and manipulate text)         | ✅     |
-| 3  | WiFi Detection<br>(detect available wireless networks)     | ✅     |
+| 3  | WiFi Detection<br>(detect available wireless networks and run commands based of "is the wifi there or not")     | ✅     |
 | 4  | LED Control<br>(turn LEDs on/off)                           | ✅     |
 | 5  | Raw Keycodes<br>(send specific key signals)                | ✅     |
 | 6  | SD Card Detection<br>(detect SD card status)               | ✅     |
