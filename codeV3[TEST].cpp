@@ -1,5 +1,5 @@
 // THE EDIT COMMANDS ETC ARE NOT WORKING AND I AM STILL TRYING FIXING THEM AND IMPLEMENTING SOMETHING IN THEM
-
+// This code includes new animations for the Web Interface and a couple of optimizations for the WEB GUI!
 #include <WiFi.h>
 #include <WebServer.h>
 #include <SD.h>
