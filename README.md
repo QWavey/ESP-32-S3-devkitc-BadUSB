@@ -79,8 +79,11 @@ SD Card Interface: SPI
 | 25 | Mouse functionality                                                                                         | ❌      |
 
 IDEAS:
+
 IF_CLIENT_CONNECTED= (VARIABLE/ STRING/ANYTHING)
+
 IF_CLIENT_DISCONNECTED= (VARIABLE/ STRING/ANYTHING)
+
 IF_CLIENT_CONNECTED_DISCONNECTED= (VARIABLE/ STRING/ANYTHING)
 ---
 
