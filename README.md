@@ -81,6 +81,8 @@ SD Card Interface: SPI
 
 # IDEAS:
 
+If someone connects/disconnects/both at the same time/ to bluetooth / wifi of the esp , start/Stop the payload
+
 IF_CLIENT_CONNECTED= (VARIABLE/ STRING/ANYTHING)
 
 IF_CLIENT_DISCONNECTED= (VARIABLE/ STRING/ANYTHING)
