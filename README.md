@@ -59,7 +59,7 @@ SD Card Interface: SPI
 | 5  | Raw Keycodes<br>(send specific key signals)                                                                 | ✅      |
 | 6  | SD Card Detection<br>(detect SD card status)                                                                | ✅      |
 | 7  | Uploading files<br>(add non-text files)                                                                     | ✅      |
-| 19 | OS Detection<br>(detect target operating system)                                                            | ✅      |
+| 19 | Noisy OS Detection<br>(detect operating system)                                                             | ✅      |
 | 8  | Function Variables<br>(store values for functions)                                                          | ⏳      |
 | 9  | Repeat / Replay Commands<br>(repeat key sequences)                                                          | ⏳      |
 | 10 | Custom Fonts WebGUI<br>(use fonts from SD)                                                                  | ⏳      |
@@ -77,6 +77,7 @@ SD Card Interface: SPI
 | 23 | Pasting/Cutting/Copying files from the SD card to the PC.                                                   | ❌      |
 | 24 | Disabling USB Function on boot and only draw power                                                          | ❌      |
 | 25 | Mouse functionality                                                                                         | ❌      |
+| 26 | Silent OS Detection                                                                                         | ❌      |
 
 # IDEAS:
 
