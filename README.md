@@ -78,6 +78,10 @@ SD Card Interface: SPI
 | 24 | Disabling USB Function on boot and only draw power                                                          | ❌      |
 | 25 | Mouse functionality                                                                                         | ❌      |
 
+IDEAS:
+IF_CLIENT_CONNECTED= (VARIABLE/ STRING/ANYTHING)
+IF_CLIENT_DISCONNECTED= (VARIABLE/ STRING/ANYTHING)
+IF_CLIENT_CONNECTED_DISCONNECTED= (VARIABLE/ STRING/ANYTHING)
 ---
 
 
