@@ -79,6 +79,10 @@ SD Card Interface: SPI
 | 25 | Mouse functionality                                                                                         | ❌      |
 | 26 | Silent OS Detection                                                                                         | ❌      |
 | 27 | HID over Bluetooth                                                                                          | ❌      |
+| 28 | Starting the script when someone connects/disconnects to the ESP(involving Bluetooth, WiFi)                 | ❌      |
+| 29 | Able to turn on/off Bluetooth/WiFi                                                                          | ❌      |
+| 30 | Able to turn on/off Bluetooth/WiFi when an WiFi was detected                                                | ❌      |
+| 31 | Chaining Commands together, making them work in universal conditions                                        | ❌      |
 
 
 ## File Structure:
