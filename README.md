@@ -7,7 +7,7 @@
 ## ESP THAT I USED:
 <img width="479" height="450" alt="image" src="https://github.com/user-attachments/assets/b76b5615-5280-4249-b5c5-efd52f53d6e5" />
 
-# ´[codeV3.cpp](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/codeV3.cpp)´ IS THE NEWEST CODE RIGHT NOW!
+# `[codeV3.cpp](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/codeV3.cpp)` IS THE NEWEST CODE RIGHT NOW!
 
 # EspGuard
 
