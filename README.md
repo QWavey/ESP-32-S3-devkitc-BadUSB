@@ -78,7 +78,7 @@ SD Card Interface: SPI
 | 24 | Disabling USB Function on boot and only draw power                                                          | ❌      |
 | 25 | Mouse functionality                                                                                         | ❌      |
 | 26 | Silent OS Detection                                                                                         | ❌      |
-
+| 27 | HID over Bluetooth                                                                                          | ❌      |
 # IDEAS:
 
 If someone connects/disconnects/both at the same time/ to bluetooth / wifi of the esp , start/Stop the payload
