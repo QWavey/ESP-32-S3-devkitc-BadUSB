@@ -79,17 +79,6 @@ SD Card Interface: SPI
 | 25 | Mouse functionality                                                                                         | ❌      |
 | 26 | Silent OS Detection                                                                                         | ❌      |
 | 27 | HID over Bluetooth                                                                                          | ❌      |
-# IDEAS:
-
-If someone connects/disconnects/both at the same time/ to bluetooth / wifi of the esp , start/Stop the payload
-
-IF_CLIENT_CONNECTED= (VARIABLE/ STRING/ANYTHING)
-
-IF_CLIENT_DISCONNECTED= (VARIABLE/ STRING/ANYTHING)
-
-IF_CLIENT_CONNECTED_DISCONNECTED= (VARIABLE/ STRING/ANYTHING)
-
----
 
 
 ## File Structure:
