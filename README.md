@@ -95,12 +95,12 @@ SD Card Interface: SPI
 - `syntaxes.json` → list of all available commands (`STRING`, `DELAY`, `REPEAT`, etc.) with description + examples
 - `main.cpp` (firmware) → ESP32 BadUSB logic
 - `README.md` → project documentation (this file)
-- Folder for payloads `/payloads`
-- Folder for Fonts `/fonts`
+- Folder for payloads `/payloads` ✅
+- Folder for Fonts `/FONTS` ✅ (not working correctly tho)
 - Folder for custom Designs / Items such as CSS, JS, HTML. `/items`
-- `/languages` (inside of sd card, containing all files)
+- `/languages` (inside of sd card, containing all files) ✅
 - `config.json` (inside of the Root of the SD card. Main config for WiFi hosting, password etc  etc....)
-- `/uploads` For saving uploaded files
+- `/uploads` For saving uploaded files ✅
 ---
 
 
