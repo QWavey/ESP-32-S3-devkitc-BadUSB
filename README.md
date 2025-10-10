@@ -17,6 +17,8 @@
 A proof-of-concept BadUSB project using the ESP32-S3 DevKitC. Demonstrates HID (Human Interface Device) emulation, keystroke injection, and custom payload deployment for security research, red teaming, and penetration testing.
 This project provides a web-based control panel for the ESP32-S3 BadUSB.  
 It allows uploading, editing, and executing BadUSB scripts directly from a browser over WiFi.
+---
+
 
 # ⚠️ ATTENTION ⚠️:
 This repository does not include or redistribute Hak5’s DuckyScript language files or any other copyrighted Hak5 content.
@@ -126,16 +128,14 @@ If you want to help me, contact me on Discord and send me your code suggestions:
 
 ---
 
-## ⏳ Work in Progress
+## ⏳ Work in Progress Wiki
 
-- Function-style variables
-- Cleaning up script parser for unsupported commands
-- Wiki. To see the incomplete structure, go to : [Wiki](https://github.com/XQuantumWaveX/ESP-32-S3-devkitc-BadUSB/wiki)
+- To see the incomplete structure, go to : [Wiki](https://github.com/XQuantumWaveX/ESP-32-S3-devkitc-BadUSB/wiki)
 ---
 
 ## ⌛ Next Steps
 
-1. Split `index.html` and `syntaxes.json` for cleaner design
+1. Integrate an `syntaxes.json` to integrate all commands
 2. Define full JSON schema for supported commands
 3. Add status indicators in UI for working / not working features
 4. Gradually implement missing features 
@@ -145,14 +145,58 @@ If you want to help me, contact me on Discord and send me your code suggestions:
 ## ✅ Usage
 
 1. Flash firmware onto ESP32-S3
-2. Connect to WiFi AP
-3. Open `192.168.4.1` in your browser
-4. Upload and run scripts from the WebUI
+2. Move the `index.html` to the SD Card
+3. Connect the SD Card with the Pins to the ESP (DO IT WHILE THE POWER IS OFF)
+4. Connect to WiFi AP
+5. Open `192.168.4.1` in your browser
+6. Upload and run scripts from the WebUI
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is for **educational and testing purposes only**.  
-Do not use it for malicious activities.
-I am not responsible for any misuse.
+This project is for educational and testing purposes only.
+
+Do not use it to conduct illegal, harmful, or malicious activities.
+
+I am not responsible for any misuse of the information or code provided.
+
+I am not responsible for any bodily injury that occurs while soldering, handling tools, or connecting wires.
+
+Follow standard safety procedures (eye protection, ventilation, insulated tools) when working with electronics.
+
+If you are unsure about a procedure, stop and seek help from a qualified person.
+
+Do not attempt high-voltage, medical, or otherwise hazardous experiments without professional supervision.
+
+Always disconnect power sources before making wiring changes or adjustments.
+
+Test circuits with appropriate measurement tools and verify voltages before touching components.
+
+Use correct-rated components and fuses — substituting parts may create fire or shock risks.
+
+Keep liquids away from electronics and work on a non-conductive surface.
+
+Keep small parts and tools away from children and pets.
+
+Do NOT eat any components or materials.
+
+Do NOT cut open batteries, capacitors, or sealed components.
+
+Do NOT pour water or any liquids on the device or circuit.
+
+This project is provided as-is with no warranty, express or implied.
+
+I make no guarantees about the accuracy, safety, or suitability of the instructions for your situation.
+
+You are responsible for ensuring compliance with local laws, regulations, and safety codes.
+
+Any modifications you make are at your own risk; back up important data before experimenting.
+
+If a step seems unclear or risky, consult official documentation, contact me, or an expert before proceeding.
+
+By using this project you accept full responsibility for results and consequences.
+
+If you plan to publish or share derived work, attribute appropriately and avoid distributing instructions that enable harm.
+
+For medical or life-critical applications, consult licensed professionals, do not rely on hobby projects.
