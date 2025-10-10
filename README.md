@@ -7,7 +7,9 @@
 ## ESP THAT I USED:
 <img width="479" height="450" alt="image" src="https://github.com/user-attachments/assets/b76b5615-5280-4249-b5c5-efd52f53d6e5" />
 
-# [`codeV3.cpp`](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/codeV3.cpp) IS THE NEWEST CODE RIGHT NOW!
+# [`codeV4.cpp`](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/codeV4.cpp) IS THE NEWEST CODE RIGHT NOW!
+
+# [`index.html`](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/index.html) THIS IS THE FILE YOU NEED TO PUT ON THE SD CARD, BELOW FIRMWARE 4 YOU DONT NEED THIS!
 
 # EspGuard
 
