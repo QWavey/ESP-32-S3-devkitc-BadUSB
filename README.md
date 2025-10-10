@@ -24,7 +24,8 @@ This project includes a web-based control panel for the ESP32-S3 BadUSB, enablin
 ---
 
 
-# ⚠️ ATTENTION ⚠️:
+<details>
+  <summary>⚠️ Legal Disclaimer - Click to expand</summary>
 This repository does not include or redistribute Hak5’s DuckyScript language files or any other copyrighted Hak5 content.
 
 The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. For those who wish to use the official language files, please visit the official Hak5 repository: [Hak5 DuckyScript Languages](https://github.com/hak5/usbrubberducky-payloads/tree/master/languages) . You ned to put the languages folder inside of the SD card.
@@ -36,6 +37,8 @@ This project is intended solely for educational purposes, experimentation, and a
 By referencing Hak5’s resources rather than including them, this repository respects copyright and trademark protections and encourages users to obtain any original files directly from Hak5. USB Rubber Ducky and DuckyScript are the trademarks of Hak5 LLC.
 ---
 # If Hak5 LLC at any time determines that this reference to their DuckyScript language files or any related content is inappropriate, unauthorized, or otherwise requires removal, this repository will promptly comply with their request and remove the reference immediately, without contest or delay, in order to respect their intellectual property rights and legal requirements.
+
+</details>
 
 ---
 
