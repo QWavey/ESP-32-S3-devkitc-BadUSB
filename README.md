@@ -25,13 +25,15 @@ This project includes a web-based control panel for the ESP32-S3 BadUSB, enablin
 
 
 <details>
-  <summary style="font-size: 24px;">⚠️ Legal Disclaimer (IMPORTANT FOR LANGUAGE FILES!) - Click to expand</summary>
+  <summary>⚠️ **LEGAL DISCLAIMER (IMPORTANT FOR LANGUAGE FILES!) - CLICK TO EXPAND**</summary>
 This repository does not include or redistribute Hak5’s DuckyScript language files or any other copyrighted Hak5 content.
-The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. For those who wish to use the official language files, please visit the official Hak5 repository: [Hak5 DuckyScript Languages](https://github.com/hak5/usbrubberducky-payloads/tree/master/languages) . You ned to put the languages folder inside of the SD card.
+The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. 
+  
+For those who wish to use the official language files, please visit the official Hak5 repository: 
+[Hak5 DuckyScript Languages](https://github.com/hak5/usbrubberducky-payloads/tree/master/languages) . You ned to put the languages folder inside of the SD card.
 
-
-IF THE URL IS DOWN, GO TO: [Waybackmachine](http://web.archive.org/web/20250000000000*/https://github.com/hak5/usbrubberducky-payloads/tree/master/languages)
-
+IF THE URL IS DOWN, GO TO:
+[Waybackmachine](http://web.archive.org/web/20250000000000*/https://github.com/hak5/usbrubberducky-payloads/tree/master/languages)
 
 This project is intended solely for educational purposes, experimentation, and authorized security testing where permitted by local laws. It is not affiliated with, endorsed by, or sponsored by Hak5 LLC. Users are responsible for ensuring that their use of this project and any related tools complies with all applicable local, national, and international laws.
 By referencing Hak5’s resources rather than including them, this repository respects copyright and trademark protections and encourages users to obtain any original files directly from Hak5. USB Rubber Ducky and DuckyScript are the trademarks of Hak5 LLC.
