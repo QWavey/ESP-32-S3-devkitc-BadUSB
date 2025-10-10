@@ -22,8 +22,9 @@ A proof-of-concept BadUSB project using the ESP32-S3 DevKitC. It demonstrates HI
 This project includes a web-based control panel for the ESP32-S3 BadUSB, enabling users to upload, edit, and execute BadUSB scripts directly from a browser over WiFi.
 
 ---
-
-# <details> <summary>⚠️ LEGAL DISCLAIMER (IMPORTANT FOR LANGUAGE FILES!) - CLICK TO EXPAND</summary>
+# ⚠️ LEGAL DISCLAIMER (IMPORTANT FOR LANGUAGE FILES!)
+<details> 
+  <summary>CLICK TO EXPAND</summary>
 This repository does not include or redistribute Hak5’s DuckyScript language files or any other copyrighted Hak5 content.
 The language files referenced in this project are owned by Hak5 LLC and are subject to copyright and trademark protections. 
   
