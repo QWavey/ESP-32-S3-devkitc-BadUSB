@@ -35,11 +35,14 @@ This project is intended solely for educational purposes, experimentation, and a
 
 By referencing Hak5’s resources rather than including them, this repository respects copyright and trademark protections and encourages users to obtain any original files directly from Hak5. USB Rubber Ducky and DuckyScript are the trademarks of Hak5 LLC.
 ---
-If Hak5 LLC at any time determines that this reference to their DuckyScript language files or any related content is inappropriate, unauthorized, or otherwise requires removal, this repository will promptly comply with their request and remove the reference immediately, without contest or delay, in order to respect their intellectual property rights and legal requirements.
+# If Hak5 LLC at any time determines that this reference to their DuckyScript language files or any related content is inappropriate, unauthorized, or otherwise requires removal, this repository will promptly comply with their request and remove the reference immediately, without contest or delay, in order to respect their intellectual property rights and legal requirements.
+
 ---
 
 Board: ESP32-S3 DevKitC-1 (N16R8)
 SD Card Interface: SPI
+
+---
 
 # SD Card Pin	ESP32-S3 DevKitC-1 Pin
 | SD Card Pin | ESP32-S3 DevKitC-1 Pin |
