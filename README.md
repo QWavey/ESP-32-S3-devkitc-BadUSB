@@ -42,9 +42,9 @@ If Hak5 LLC at any time determines that this reference to their DuckyScript lang
 
 ---
 
-# Board: ESP32-S3 DevKitC-1 (N16R8)
+- Board: ESP32-S3 DevKitC-1 (N16R8)
 
-# SD Card Interface: SPI
+- SD Card Interface: SPI
 
 ---
 
