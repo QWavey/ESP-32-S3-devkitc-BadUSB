@@ -14,9 +14,13 @@
 # EspGuard
 
 ---
-A proof-of-concept BadUSB project using the ESP32-S3 DevKitC. Demonstrates HID (Human Interface Device) emulation, keystroke injection, and custom payload deployment for security research, red teaming, and penetration testing.
-This project provides a web-based control panel for the ESP32-S3 BadUSB.  
-It allows uploading, editing, and executing BadUSB scripts directly from a browser over WiFi.
+
+ESP32-S3 BadUSB Proof-of-Concept
+
+A proof-of-concept BadUSB project using the ESP32-S3 DevKitC. It demonstrates HID (Human Interface Device) emulation, keystroke injection, and custom payload deployment for security research, red teaming, and penetration testing.
+
+This project includes a web-based control panel for the ESP32-S3 BadUSB, enabling users to upload, edit, and execute BadUSB scripts directly from a browser over WiFi.
+
 ---
 
 
