@@ -61,7 +61,7 @@ SD Card Interface: SPI
 | 5  | Raw Keycodes<br>(send specific key signals)                                                                 | ✅      |
 | 6  | SD Card Detection<br>(detect SD card status)                                                                | ✅      |
 | 7  | Uploading files<br>(add non-text files)                                                                     | ✅      |
-| 19 | Noisy OS Detection<br>(detect operating system)                                                             | ✅      |
+| 19 | Noisy OS Detection<br>(detect operating system)                                                             | ⏳      |
 | 8  | Function Variables<br>(store values for functions)                                                          | ⏳      |
 | 9  | Repeat / Replay Commands<br>(repeat key sequences)                                                          | ⏳      |
 | 10 | Custom Fonts WebGUI<br>(use fonts from SD)                                                                  | ⏳      |
@@ -94,6 +94,8 @@ SD Card Interface: SPI
 
 `/DESIGNS` (inside of the sd card, containing the `/CSS`, `/JSS`, and `/FONTS` folders. You need to create them yourself)
   .....
+
+`index.html` (inside of the sd card, containing the Website. Copy/Paste the [`index.html`](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/edit/main/index.html)
 
 ## 🗂️ Planned File Structure
 
