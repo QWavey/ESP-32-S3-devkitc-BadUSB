@@ -99,7 +99,7 @@ If Hak5 LLC at any time determines that this reference to their DuckyScript lang
 | 30 | Able to turn on/off Bluetooth/WiFi when an WiFi was detected                                                | ❌      |
 | 31 | Chaining Commands together, making them work in universal conditions                                        | ❌      |
 | 32 | While/For loops                                                                                             | ❌      |
-| 33 | Advanced scripting [EXAMPLE](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/wiki/Commands#example)               | ❌      |
+| 33 | Advanced scripting [EXAMPLE](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/wiki/Commands#example)      | ❌      |
 
 
 ## File Structure:
