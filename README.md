@@ -56,7 +56,7 @@ If Hak5 LLC at any time determines that this reference to their DuckyScript lang
 |   `CS (SS)` | `GPIO10`               |
 |      `MOSI` | `GPIO11`               |
 |      `MISO` | `GPIO13`               |
-
+|      `CLK` | `GPIO12`               |
 ---
 ✅ Working as expected
 
