@@ -9,7 +9,7 @@
 
 # [`codeV4.cpp`](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/codeV4.cpp) 
 
-# [`index.html`](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/index.html) FILE YOU NEED TO PUT ON THE SD CARD, BELOW FIRMWARE 4 YOU DONT NEED THIS!
+# [`index.html`](https://github.com/QWavey/ESP-32-S3-devkitc-BadUSB/blob/main/index.html)
 
 # EspGuard
 
