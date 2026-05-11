@@ -1,0 +1,14 @@
+# Exclude backup and wiki folders
+BACKUP DO NOT ENTER/
+WIKI/
+
+# Arduino build artifacts
+build/
+*.o
+*.elf
+*.bin
+*.hex
+
+# OS files
+.DS_Store
+Thumbs.db

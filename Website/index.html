@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32-S3 BadUSB | Elite Control</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="style.css?v=2.5">
+</head>
+<body>
+    <div class="container">
+        <h1>ESP32-S3 BadUSB</h1>
+        
+        <nav class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'Script')">Coding</button>
+            <button class="tablinks" onclick="openTab(event, 'Scripts')">Scripts</button>
+            <button class="tablinks" onclick="openTab(event, 'File_Manager')">Explorer</button>
+            <button class="tablinks" onclick="openTab(event, 'Design')">Design</button>
+            <button class="tablinks" onclick="openTab(event, 'Boot')">Boot</button>
+            <button class="tablinks" onclick="openTab(event, 'Settings')">Settings</button>
+            <button class="tablinks" onclick="openTab(event, 'Statistics')">Stats</button>
+            <button class="tablinks" onclick="openTab(event, 'Help')">Help</button>
+        </nav>
+
+        <div id="tabContainer">
+            <!-- Script Tab -->
+            <section id="tab-Script" class="tabcontent" style="display:block">
+                <div class="flex-row" style="justify-content: space-between;">
+                    <h3>Script Execution</h3>
+                    <div id="scriptStatus" style="font-size: 12px; color: var(--primary);">Idle</div>
+                </div>
+
+                <div class="editor-wrapper">
+                    <div class="editor-gutter" id="editorGutter">1</div>
+                    <div class="editor-main">
+                        <div class="editor-highlights" id="editorHighlights"></div>
+                        <textarea id="scriptArea" spellcheck="false" placeholder="Enter DuckyScript..."></textarea>
+                        <div id="customScrollbar" class="custom-scrollbar-track">
+                            <div id="customScrollbarContent" class="custom-scrollbar-content"></div>
+                            <div id="customScrollbarThumb" class="custom-scrollbar-thumb"></div>
+                        </div>
+                        <div id="lineCounter" class="line-counter">0 Lines</div>
+                    </div>
+                </div>
+
+                <div id="issuesPanel" class="issues-panel" style="display: none;">
+            <div class="issues-header" onclick="toggleIssuesList()">
+                <div class="flex-row" style="gap: 10px;">
+                    <div id="issueStatus" class="issue-badge">Syntax Issues</div>
+                    <span id="issuesChevron" class="issues-chevron"></span>
+                </div>
+                <button id="fixAllBtn" class="fix-all-btn" style="display: none;" onclick="event.stopPropagation(); fixAllErrors()">Fix All</button>
+            </div>
+            <div class="collapsible-wrapper">
+                <div id="issuesList" class="issues-list"></div>
+            </div>
+        </div>
+                
+                <div class="progress-bar" id="progressBar" style="display:none">
+                    <div class="progress-fill" id="progressFill" style="width:0%"></div>
+                </div>
+                
+                <div class="control-panel flex-row" style="margin-top: 15px; flex-wrap: wrap;">
+                    <button class="control-btn" onclick="executeScript()"><span id="runBunny" class="run-bunny"></span> Run Script</button>
+                    <button class="control-btn" onclick="stopScript()">Stop</button>
+                    <button class="control-btn" onclick="clearScript()">Clear</button>
+                    <button class="control-btn" onclick="saveScriptPrompt()">Save</button>
+                    <button class="control-btn" onclick="loadFromHistory()">History</button>
+                </div>
+
+                <div class="section" style="margin-top: 40px; border-top: 2px solid var(--glass-border); padding-top: 30px;">
+                    <div class="flex-row" style="justify-content: space-between;">
+                        <h3>Background Automation Queue</h3>
+                        <button onclick="refreshTasks()" style="padding: 5px 12px; font-size: 11px;">Refresh</button>
+                    </div>
+                    <div id="taskList" class="file-list" style="margin-top:10px"></div>
+                </div>
+            </section>
+
+            <!-- Scripts Tab (Renamed from Files) -->
+            <section id="tab-Scripts" class="tabcontent">
+                <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                    <h3>Script Library</h3>
+                    <button onclick="refreshFileBrowser()" style="padding: 5px 12px; font-size: 11px;">Refresh</button>
+                </div>
+                <div style="position: relative; height: 400px;">
+                    <div class="file-list" id="fileList" style="height: 100%;"></div>
+                    <div id="fileListScrollbar" class="custom-scrollbar-track">
+                        <div id="fileListScrollbarThumb" class="custom-scrollbar-thumb"></div>
+                    </div>
+                </div>
+                <div class="setting-row flex-row" style="margin-top: 20px;">
+                    <input type="text" id="newFilename" placeholder="New script name" class="flex-grow">
+                    <button onclick="saveScript()">Save Current</button>
+                </div>
+            </section>
+
+            <!-- File Manager Tab -->
+            <section id="tab-File_Manager" class="tabcontent">
+                <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                    <h3>System File Explorer</h3>
+                    <button onclick="refreshFileBrowser()" style="padding: 5px 12px; font-size: 11px;">Refresh 🔄</button>
+                </div>
+                <div class="section">
+                    <div class="flex-row" style="justify-content: space-between; margin-bottom: 10px;">
+                        <span id="currentDirDisplay" style="font-family: monospace; color: var(--primary);">/</span>
+                        <button onclick="goToParent()" style="padding: 5px 12px; font-size: 12px;">Up</button>
+                    </div>
+                    <div style="position: relative; height: 400px;">
+                        <div id="fileBrowser" class="file-browser" style="height: 100%;"></div>
+                        <div id="fileBrowserScrollbar" class="custom-scrollbar-track">
+                            <div id="fileBrowserScrollbarThumb" class="custom-scrollbar-thumb"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-group">
+                    <h4>Upload & Folder Actions</h4>
+                    <div id="uploadArea" class="section" style="border: 2px dashed var(--glass-border); text-align: center; cursor: pointer;">
+                        <div class="folder-icon" style="font-size: 32px; margin-bottom: 10px;"></div>
+                        <p>Click or Drag & Drop to upload</p>
+                        <input type="file" id="fileInput" style="display:none" multiple>
+                    </div>
+                    <div class="flex-row" style="margin-top: 15px;">
+                        <button onclick="createNewFolder()" class="flex-grow">New Folder</button>
+                        <button onclick="pasteFile()" class="flex-grow">Paste File</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Tab -->
+            <section id="tab-Design" class="tabcontent">
+                <h3>UI Design System</h3>
+                <div id="designList" class="file-list"></div>
+                <div class="control-panel flex-row" style="margin-top: 15px;">
+                    <button onclick="refreshDesigns()" class="flex-grow">Refresh</button>
+                    <button onclick="applySelectedDesign()" class="flex-grow">Apply</button>
+                    <button onclick="resetDesign()" class="flex-grow danger">Reset</button>
+                </div>
+            </section>
+
+            <section id="tab-Boot" class="tabcontent">
+                <h3>Boot Sequence</h3>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">Select multiple scripts to execute on boot.</p>
+                <div id="bootScriptsList" class="file-list" style="margin-bottom: 20px;"></div>
+                <button onclick="saveBootScripts()" style="width: 100%;">Save Boot Selection</button>
+
+                <div class="setting-group" style="margin-top: 20px;">
+                    <h4>Set Boot Script via Command</h4>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Use <code>SET_BOOT_SCRIPT filename.txt</code> in any script to change the boot script programmatically.</p>
+                    <div class="flex-row">
+                        <input type="text" id="quickBootScript" placeholder="filename.txt" class="flex-grow">
+                        <button onclick="quickSetBootScript()">Set</button>
+                    </div>
+                </div>
+
+                <div class="section" style="margin-top: 20px;">
+                    <h4>Boot Preview</h4>
+                    <textarea id="bootScriptPreview" readonly style="height:150px"></textarea>
+                </div>
+            </section>
+
+            <!-- Settings Tab -->
+            <section id="tab-Settings" class="tabcontent">
+                <h3>System Configuration</h3>
+                
+                <div class="grid-2">
+                    <div class="setting-group">
+                        <h4>Internet Connection</h4>
+                        <input type="text" id="wifiSSIDJoin" placeholder="SSID" style="width: 100%; margin-bottom: 10px;">
+                        <input type="password" id="wifiPasswordJoin" placeholder="Password" style="width: 100%; margin-bottom: 10px;">
+                        <div class="flex-row">
+                            <button onclick="joinInternet()" class="flex-grow">Connect</button>
+                            <button onclick="leaveInternet()" class="danger">Leave</button>
+                        </div>
+                        <label class="custom-checkbox" style="margin-top: 8px; font-size: 12px;">
+                            <input type="checkbox" id="saveCredToggle" onchange="toggleSaveOnConnect()"> Save credentials
+                        </label>
+                        <div id="wifiStatus" style="margin-top: 10px; font-size: 12px;">Status: Idle</div>
+                    </div>
+
+                    <div class="setting-group">
+                        <h4>Toggles</h4>
+                        <div class="flex-row" style="justify-content: space-between; margin-bottom: 10px;">
+                            <span>Hardware LED</span>
+                            <label class="switch"><input type="checkbox" id="ledToggle" checked onchange="toggleLED()"><span class="slider"></span></label>
+                        </div>
+                        <div class="flex-row" style="justify-content: space-between; margin-bottom: 10px;">
+                            <span>Logging</span>
+                            <label class="switch"><input type="checkbox" id="loggingToggle" onchange="toggleLogging()"><span class="slider"></span></label>
+                        </div>
+                        <div class="flex-row" style="justify-content: space-between; margin-bottom: 10px;">
+                            <span>Bluetooth</span>
+                            <label class="switch"><input type="checkbox" id="btToggle" onchange="toggleBluetooth()"><span class="slider"></span></label>
+                        </div>
+                        <div class="flex-row" style="justify-content: space-between;">
+                            <span>Bluetooth Discovery</span>
+                            <label class="switch"><input type="checkbox" id="btDiscoveryToggle" onchange="toggleBluetoothDiscovery()"><span class="slider"></span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>Language</h4>
+                    <div class="flex-row">
+                        <select id="languageSelect" class="flex-grow"></select>
+                        <button onclick="saveLanguageSettings()">Apply</button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>AP Settings</h4>
+                    <input type="text" id="wifiSSID" placeholder="AP SSID" style="width: 100%; margin-bottom: 10px;">
+                    <input type="password" id="wifiPassword" placeholder="AP Password" style="width: 100%; margin-bottom: 10px;">
+                    <div class="flex-row">
+                        <input type="number" id="wifiScanTime" value="5000" class="flex-grow">
+                        <button onclick="saveWiFiSettings()">Save & Reboot</button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>USB Identity (VID/PID)</h4>
+                    <div class="grid-2" style="margin-bottom: 10px;">
+                        <div class="flex-row">
+                            <input type="text" id="usbVID" placeholder="VID" style="flex:1">
+                            <label class="custom-checkbox"><input type="checkbox" id="usbRndVID" onchange="handleRandomToggle()"> Random</label>
+                        </div>
+                        <div class="flex-row">
+                            <input type="text" id="usbPID" placeholder="PID" style="flex:1">
+                            <label class="custom-checkbox"><input type="checkbox" id="usbRndPID" onchange="handleRandomToggle()"> Random</label>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <input type="text" id="usbMfr" placeholder="Manufacturer" class="flex-grow">
+                        <input type="text" id="usbProd" placeholder="Product" class="flex-grow">
+                    </div>
+                    <button onclick="saveUSBSettings()" style="width: 100%; margin-top: 10px;">Apply & Reboot</button>
+                </div>
+
+                <div class="setting-group">
+                    <h4>Editor Settings</h4>
+                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                        <span>Autocomplete Suggestions</span>
+                        <label class="switch">
+                            <input type="checkbox" id="settingAutocomplete" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>Connectivity</h4>
+                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                        <span>Automatic Reconnection</span>
+                        <label class="switch">
+                            <input type="checkbox" id="autoRetryToggle" onchange="toggleAutoRetry()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="flex-row" style="justify-content: space-between; align-items: center; margin-top: 10px;">
+                        <span>Auto-connect to Saved WiFi on Reboot</span>
+                        <label class="switch">
+                            <input type="checkbox" id="autoConnectToggle" onchange="toggleAutoConnect()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4 onclick="toggleSavedNetworksPanel()" style="cursor:pointer">Saved WiFi Networks ▼</h4>
+                    <div id="savedNetworksPanel" style="display:none;">
+                        <div id="savedNetworksList" class="file-list" style="margin-bottom: 10px; min-height: 40px; font-size: 12px;">Loading...</div>
+                        <button onclick="loadSavedNetworks()" style="width: 100%; font-size: 12px; padding: 6px;">Refresh List</button>
+                    </div>
+                </div>
+
+                <div class="setting-group danger">
+                    <h4 style="color: var(--danger);">Danger Zone</h4>
+                    <div class="flex-row">
+                        <button class="danger flex-grow" onclick="selfDestructPrompt()">Self Destruct</button>
+                        <button class="danger flex-grow" onclick="clearErrorLog()">Clear Errors</button>
+                        <button class="danger flex-grow" onclick="factoryReset()">Factory Reset</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Tab -->
+            <section id="tab-Statistics" class="tabcontent">
+                <h3>Device Metrics</h3>
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-value" id="errorCount">0</div><div class="stat-label">Errors</div></div>
+                    <div class="stat-card"><div class="stat-value" id="totalScripts">0</div><div class="stat-label">Scripts</div></div>
+                    <div class="stat-card"><div class="stat-value" id="totalCommands">0</div><div class="stat-label">Commands</div></div>
+                    <div class="stat-card"><div class="stat-value" id="clientCount">0</div><div class="stat-label">Clients</div></div>
+                    <div class="stat-card"><div class="stat-value" id="detectedOS" style="font-size: 16px;">Unknown</div><div class="stat-label">OS</div></div>
+                </div>
+                <div class="section">
+                    <h4>History</h4>
+                    <div id="historyList" class="history-list"></div>
+                </div>
+                <div class="setting-group">
+                    <div class="flex-row" style="justify-content: space-between;"><span>Last Error:</span><span id="lastError" style="color:var(--danger)">None</span></div>
+                    <div class="flex-row" style="justify-content: space-between;"><span>Uptime:</span><span id="uptime">0s</span></div>
+                    <div class="flex-row" style="justify-content: space-between;"><span>RAM:</span><span id="freeMemory">0 KB</span></div>
+                </div>
+            </section>
+
+
+
+            <!-- Help Tab -->
+            <section id="tab-Help" class="tabcontent">
+                <h3>Command Reference</h3>
+                <div class="section" style="max-height: 600px; overflow-y: auto; padding-right: 10px;">
+                    <div class="setting-group">
+                        <h4 onclick="toggleHelp('keys-help')" style="cursor:pointer">Keystrokes & Typing ▼</h4>
+                        <div id="keys-help" class="help-grid" style="display:none;">
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>STRING [text]</code><span>Types text at high speed</span>
+                                <div class="help-example">STRING Hello World!</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>STRINGLN [text]</code><span>Types text + ENTER</span>
+                                <div class="help-example">STRINGLN echo "Success"</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>ENTER</code><span>Presses the Enter key</span>
+                                <div class="help-example">ENTER</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>GUI [key]</code><span>Windows/CMD key</span>
+                                <div class="help-example">GUI r</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>CTRL [key]</code><span>Control key</span>
+                                <div class="help-example">CTRL c</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>ALT [key]</code><span>Alt key</span>
+                                <div class="help-example">ALT f4</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-group">
+                        <h4 onclick="toggleHelp('logic-help')" style="cursor:pointer">Logic & Variables ▼</h4>
+                        <div id="logic-help" class="help-grid" style="display:none;">
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>VAR name = [val]</code><span>Declare/Assign variable</span>
+                                <div class="help-example">VAR counter = 0
+counter = counter + 1</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>IF [condition]</code><span>Standard Condition</span>
+                                <div class="help-example">IF counter == 5
+    STRING Goal Reached
+ENDIF</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>REPEAT [n]</code><span>Repeats last command N times</span>
+                                <div class="help-example">STRING .
+REPEAT 10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-group">
+                        <h4 onclick="toggleHelp('net-help')" style="cursor:pointer">Network & Environment ▼</h4>
+                        <div id="net-help" class="help-grid" style="display:none;">
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>IF_ONLINE</code><span>Run if WiFi active</span>
+                                <div class="help-example">IF_ONLINE
+    STRING Internet is available!
+ENDIF</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>DOWNLOAD_FILE [URL] [PATH]</code><span>Download to SD</span>
+                                <div class="help-example">DOWNLOAD_FILE http://test.com/payload.txt /payload.txt</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>WIFI_ON</code><span>Enable WiFi</span>
+                                <div class="help-example">WIFI_ON</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-group">
+                        <h4 onclick="toggleHelp('sys-help')" style="cursor:pointer">System & Hardware ▼</h4>
+                        <div id="sys-help" class="help-grid" style="display:none;">
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>LED_R</code><span>Set LED Red</span>
+                                <div class="help-example">LED_R</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>BLINK_LED_G</code><span>Blink Green</span>
+                                <div class="help-example">BLINK_LED_G</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>REBOOT</code><span>Restart Device</span>
+                                <div class="help-example">REBOOT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-group">
+                        <h4 onclick="toggleHelp('creative-help')" style="cursor:pointer">Creative Commands ▼</h4>
+                        <div id="creative-help" class="help-grid" style="display:none;">
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>DETECT_OS</code><span>Interact with host OS</span>
+                                <div class="help-example">DETECT_OS
+IF_OS WINDOWS
+    STRING Hello Windows User
+ENDIF</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>IF_PRESENT</code><span>WiFi/Network payloads</span>
+                                <div class="help-example">IF_PRESENT SSID="Home_WiFi"
+    STRING Connected home
+ENDIF</div>
+                            </div>
+                            <div class="help-item" onclick="toggleExample(this)">
+                                <code>LED_BLINK</code><span>Status signaling</span>
+                                <div class="help-example">LED_BLINK
+DELAY 500
+BLINK_STOP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Connection Error Overlay -->
+    <div id="connectionError" class="overlay" style="display:none">
+        <div class="overlay-content">
+            <button class="close-overlay" onclick="hideConnectionError()">×</button>
+            <div class="error-icon"></div>
+            <h3>Connection Lost</h3>
+            <p>Unable to communicate with the ESP32-S3 hardware. Please check your connection and try again.</p>
+            
+            <div style="margin-bottom: 20px;">
+                <label class="custom-checkbox" style="justify-content: center;">
+                    <input type="checkbox" id="dontShowConnError"> Don't show again for this session
+                </label>
+            </div>
+
+            <div class="advanced-error-toggle" onclick="toggleAdvancedErrorOptions()">
+                Advanced Options <span id="advErrorArrow">▼</span>
+            </div>
+            <div id="advancedErrorOptions" style="display:none; margin: 10px 0; text-align: left; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px;">
+                <label class="custom-checkbox">
+                    <input type="checkbox" id="retryConnToggle" checked> Retry connection to ESP
+                </label>
+            </div>
+
+            <div class="flex-row" style="gap: 10px;">
+                <button onclick="retryConnection()" class="flex-grow">Retry Connection</button>
+                <button onclick="hideConnectionError()" class="flex-grow secondary">Dismiss</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=2.5"></script>
+</body>
+</html>
