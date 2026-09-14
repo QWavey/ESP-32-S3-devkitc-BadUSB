@@ -1264,6 +1264,17 @@ function updateStats() {
             }
         }
 
+        // Firmware-driven hide list: /api/stats.hidden_settings = ["led", ...]
+        // hides any element carrying [data-setting=<key>]. Lets a firmware
+        // variant tell the shared web UI which controls its hardware doesn't
+        // support, without forking the HTML.
+        if (Array.isArray(data.hidden_settings)) {
+            data.hidden_settings.forEach(key => {
+                document.querySelectorAll('[data-setting="' + key + '"]')
+                    .forEach(el => { el.style.display = 'none'; });
+            });
+        }
+
         // Update toggles even if hidden
         // Synchronize Settings (Toggles)
         const toggles = {
