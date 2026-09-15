@@ -461,6 +461,14 @@ void setupWebServer() {
 
   server.on("/api/stats", []() {
     DynamicJsonDocument doc(4096);
+    // Hidden-settings list — see Watch WebServerManager for the mechanism.
+    // DevKitC hides:
+    //   lan_mode — Watch-only feature; the DevKitC only has one USB PHY
+    //              already committed to device mode.
+    {
+      JsonArray hidden = doc.createNestedArray("hidden_settings");
+      hidden.add("lan_mode");
+    }
     doc["errorCount"] = errorCount;
     doc["totalScripts"] = totalScriptsExecuted;
     doc["totalCommands"] = totalCommandsExecuted;
